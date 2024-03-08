@@ -23,6 +23,9 @@ public class Payment {
     @Column(nullable = false)
     private String status;
 
+    @Column
+    private Long id_transaction;
+
     public Payment() {
     }
 
@@ -58,5 +61,12 @@ public class Payment {
         this.status = status;
     }
 
-    // Getters e setters
+    public Long getId_transaction() {
+        return id_transaction;
+    }
+
+    public void setId_transaction(Long id_transaction) {
+        this.id_transaction = id_transaction;
+    }
+
 }
