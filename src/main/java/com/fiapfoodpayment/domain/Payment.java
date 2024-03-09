@@ -24,7 +24,7 @@ public class Payment {
     private String status;
 
     @Column
-    private Long id_transaction;
+    private String id_transaction;
 
     public Payment() {
     }
@@ -61,12 +61,11 @@ public class Payment {
         this.status = status;
     }
 
-    public Long getId_transaction() {
+    public String getId_transaction() {
         return id_transaction;
     }
 
-    public void setId_transaction(Long id_transaction) {
+    public void setId_transaction(String id_transaction) {
         this.id_transaction = id_transaction;
     }
-
 }

@@ -20,7 +20,7 @@ public class PaymentService {
         String status = simularPagamento();
         payment.setStatus(status);
         paymentRepository.save(payment);
-        return "Pagamento " + status;
+        return status;
     }
 
     private String simularPagamento() {
