@@ -12,20 +12,20 @@ spec:
     spec:
       containers:
         - name: fiap-food-payment-container
-          image: updateconsultoria/fiap-food-payment:v1.0
+          image: updateconsultoria/fiap-food-payment:v2.0
           ports:
-            - containerPort: 80
+            - containerPort: 81
           livenessProbe:
             httpGet:
               path: /swagger-ui/index.html
-              port: 8080
+              port: 8081
             periodSeconds: 10
             failureThreshold: 3
             initialDelaySeconds: 20
           readinessProbe:
             httpGet:
               path: /swagger-ui/index.html
-              port: 8080
+              port: 8081
             periodSeconds: 10
             failureThreshold: 5
             initialDelaySeconds: 3
